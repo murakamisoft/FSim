@@ -4,7 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SettingInfo implements Serializable {
+public class Investor implements Serializable {
+
+	private static final long serialVersionUID = -8825710898900855672L;
 
 	private int showVal;
 	private int pool;
@@ -15,7 +17,7 @@ public class SettingInfo implements Serializable {
 	private int fPrice;
 	private Town town;
 
-	public SettingInfo(int showVal, int pool, int fPrice, int poolMonth, int cashFlow, int age) {
+	public Investor(int showVal, int pool, int fPrice, int poolMonth, int cashFlow, int age) {
 		this.showVal = showVal;
 		this.pool = pool;
 		this.poolMonth = poolMonth;

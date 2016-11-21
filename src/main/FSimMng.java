@@ -2,9 +2,9 @@ package main;
 
 public class FSimMng {
 
-	private SettingInfo murakami;
+	private Investor murakami;
 
-	public FSimMng(SettingInfo murakami) {
+	public FSimMng(Investor murakami) {
 
 		this.murakami = murakami;
 	}
@@ -24,6 +24,7 @@ public class FSimMng {
 			if (fBuyer.isBuy()) {
 				murakami.addHouse();
 				murakami.payHouseMoney();
+				System.out.println("***");
 			}
 
 		}
