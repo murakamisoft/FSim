@@ -60,6 +60,10 @@ public class FSimMng {
 		buf.append(murakami.getHouseVal());
 		buf.append("\t");
 
+		buf.append("総資産金額：");
+		buf.append(murakami.getAllAssets());
+		buf.append("\t");
+
 		return buf.toString();
 	}
 

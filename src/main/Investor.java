@@ -103,4 +103,18 @@ public class Investor implements Serializable {
 		return Integer.toString(age);
 	}
 
+	public String getAllAssets() {
+
+		int r = getHouseListPrice() + this.pool;
+		return Integer.toString(r);
+	}
+
+	private int getHouseListPrice() {
+		int p = 0;
+		for (House house : this.haveHouseList) {
+			p += house.getPrice();
+		}
+		return p;
+	}
+
 }
