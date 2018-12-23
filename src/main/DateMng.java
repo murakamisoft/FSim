@@ -3,6 +3,12 @@ package main;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+/**
+ * 日付管理
+ *
+ * @author admin
+ *
+ */
 public class DateMng {
 
 	public String getAddDate(int i) {
